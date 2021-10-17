@@ -1,0 +1,5 @@
+Todo list:
+    Create a mongodb instance to store user information
+    Create the user model and controller to login and signup
+    Create requests for the user model and controller to make sure they are working
+    Create the user login and signup functionality
