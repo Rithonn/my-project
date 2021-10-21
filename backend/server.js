@@ -1,4 +1,5 @@
 const express = require("express");
+const mongoose = require('mongoose');
 const PORT = process.env.PORT || 3001;
 const app = express();
 
@@ -6,6 +7,13 @@ const dotEnv = require("dotenv").config();
 if(dotEnv.error){
     throw dotEnv.error;
 }
+//Establish server connection
+main().then(() => console.log('Connected to Mongo Atlas')).catch(err => console.log(err));
+
+async function main() {
+    await mongoose.connect(process.env.MONGO_DB);
+}
+
 
 //Models
 //Controllers
