@@ -16,8 +16,9 @@ async function main() {
 
 
 //Models
+let User = require('./models/User');
 //Controllers
-
+let userController = require('./controllers/UserController');
 
 /**Place all controller routes here
  * Ex.
