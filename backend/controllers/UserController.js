@@ -8,12 +8,13 @@ export function loginPost(req, res){
        if(!user){
            return res.status(401).send({message: 'The email address provided does not have an account'});
        }
-        user.comparePassword(req.body.password, function(err, matched){
-            if(!matched){
-                return res.status(401).send({ message: 'Invalid email or password' });
-            }
-            res.send({user: user.toJson()});
-        });
+       res.send({user: user.toJson()});
+        // user.comparePassword(req.body.password, function(err, matched){
+        //     if(!matched){
+        //         return res.status(401).send({ message: 'Invalid email or password' });
+        //     }
+        //     res.send({user: user.toJson()});
+        // });
     });
 }
 /**
