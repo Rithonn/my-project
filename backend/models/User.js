@@ -10,10 +10,14 @@ const userSchema = new Schema({
     email: {String, unique: true},
     password: String,
 }, schemaOptions);
+
 //In the future when password hashing is implemented
 //You will need to access the userSchema.pre middleware and call the function
 //That you are defining down below
 
+userSchema.methods.comparePassword(function (password, cb){
+    return true;
+});
 
 let User = mongoose.model('User', userSchema);
 module.exports = User;
