@@ -1,5 +1,5 @@
 Todo list:
     Create a mongodb instance to store user information - Done - 10/21/2021
-    Create the user model and controller to login and signup
+    Create the user model and controller to login and signup - Done - 10/23/2021
     Create requests for the user model and controller to make sure they are working
-    Create the user login and signup functionality
+    Create the user login and signup form functionality
