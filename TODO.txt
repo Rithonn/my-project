@@ -1,5 +1,12 @@
 Todo list:
     Create a mongodb instance to store user information - Done - 10/21/2021
     Create the user model and controller to login and signup - Done - 10/23/2021
+
+
+    Get API Key to work with video api
+    https://rawg.io/apidocs - DONE - 10/24/2021
+
+
+
     Create requests for the user model and controller to make sure they are working
     Create the user login and signup form functionality
